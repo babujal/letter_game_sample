@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+    <script defer src="./app.js" ></script>
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+      <!-- Welcome MSG -->
+      <h1 class="title">
+        Guess the letter
+      </h1>
+      <!-- Instructions -->
+      <p class="subtitle">
+       Pick a letter from the choices below, or type a valid letter and test your <strong>luck!</strong>
+      </p>
+
+      <!-- Letters to Click -->
+      <div id="letter-buttons-container" class="grid has-12-cols"></div>
+
+      <!-- User Guesses -->
+      <div class="columns">
+        <div class="column is-full">Your Guesses so far: <span id="user-guesses"></span></div>
+      </div>
+
+      <!-- Score Tracker -->
+      <div class="columns">
+        <div class="column is-one-third">Wins: <span id="wins"></span></div>
+        <div class="column is-one-third">Losses: <span id="losses"></span></div>
+        <div class="column is-one-third">Guesses Left <span id="guesses-left"></span></div>
+      </div>
+    </div>
+  </section>
+  </body>
+</html>
